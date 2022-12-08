@@ -5,6 +5,10 @@ Afterwards it prints out the name of it alongside all descriptors.
 
 There was a bug where "of" was displayed twice and the fix was to remove it
 in the print statement as opposed to the variable
+
+In order to make the code more understandable, make the variable names more
+descriptive.
+ex: a becomes name and b becomes descriptor
 */
 Console.WriteLine("What kind of thing are we talking about?");
 string a = Console.ReadLine(); // name of the thing

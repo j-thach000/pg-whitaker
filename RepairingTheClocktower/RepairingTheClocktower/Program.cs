@@ -1,7 +1,7 @@
 ﻿/* TODO:
  * [x] Take a number as input from user
- * [] Display the word "Tick" if user input is even
- * [] Display the word "Tock" if user input is odd
+ * [x] Display the word "Tick" if user input is even
+ * [x] Display the word "Tock" if user input is odd
  */
 
 Console.Write("Input: ");

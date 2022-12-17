@@ -14,7 +14,7 @@
  * Machete - 20
  * Canoe - 200
  * Food Supplies - 1
- */
+ */ 
 
 Console.WriteLine("The following items are available: ");
 Console.WriteLine("1 - Rope");

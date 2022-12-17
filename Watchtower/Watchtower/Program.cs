@@ -4,13 +4,12 @@
  * [x] Implement logic deciding the direction an enemy is coming from
  */
 
-// prompt and store user input
 Console.Write("Input enemy coordinate x: ");
 int enemyCoordinateX = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input enemy coordinate y: ");
 int enemyCoordinateY = Convert.ToInt32(Console.ReadLine());
 
-// logic deciding enemy direction
+
 string enemyDirection = "";
 if (enemyCoordinateX < 0 && enemyCoordinateY > 0)
     enemyDirection = "northwest!";

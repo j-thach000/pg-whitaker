@@ -1,6 +1,6 @@
 ﻿/* TODO:
  * [x] Modify the for loop computing an array's minimum to use foreach
- * [] Modify the for loop computing an array's average to use foreach
+ * [x] Modify the for loop computing an array's average to use foreach
  */
 
 // for min

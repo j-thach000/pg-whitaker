@@ -1,4 +1,91 @@
-﻿/* [x] declare an array
+﻿/* LEVEL 13 TODO:
+ * [x] define a method
+ * [x] draw a code map that includes: functions, methods, and local functions
+ * [x] call a method
+ * [x] create a method with parameters
+ * [x] create a method with multiple parameters
+ * [x] create a method that returns a value
+ * [x] overload a method
+ * [] define a method with an expression
+ */
+
+// methods with expressions
+int DoubleAndAddOne(int value)
+{
+    return value * 2 + 1;
+}
+
+Console.WriteLine(DoubleAndAddOne(5));
+
+/* 12/18/22
+ * 
+ * // overloading a method, local functions don't allow this
+void returnBirthMonth(int value)
+{
+    Console.WriteLine(value);
+}
+
+void returnBirthMonth(string value)
+{
+    Console.WriteLine(value);
+}
+
+ * 
+ * 
+void Count(int numberToCountTo)
+{
+    for (int i = 1; i <= numberToCountTo; i++)
+        Console.WriteLine(  i);
+}
+
+
+int ReadNumber() // state the data type of the value returned
+{
+    string input = Console.ReadLine();
+    int number = Convert.ToInt32(input);
+    return number; // what value are we returning
+}
+
+Console.Write("How high should I count? ");
+int chosenNumber = ReadNumber();
+Count(chosenNumber);
+
+
+ * 
+ * void CountBetween(int start, int end) // avoid means no data returned
+{
+    for (int current = start; current <= end; current++)
+        Console.WriteLine(current);
+}
+
+CountBetween(5, 10);
+
+ * 
+
+Count(5);
+ * 
+ * 
+ * void CountToTen() // local function
+{
+    for (int i = 1; i <= 10; i++) Console.WriteLine(i);
+}
+CountToTen(); // local function call
+ * 
+ * // foreach loop syntax
+int[] scores = new int[10];
+for (int i = 0; i < scores.Length; i++)
+    scores[i] = Convert.ToInt32(Console.ReadLine());
+
+foreach (int score in scores)
+    Console.WriteLine(score);
+ * 
+ * 
+ * 
+ */
+
+/* #### 12/17/22
+
+/* [x] declare an array
  * [x] access an element
  * [x] change an element in an array
  * [x] get the length of an array
@@ -10,13 +97,14 @@
  */
 
 // * [] given an array of integers, calculate the average of the values
+/*
 int[] example = new int[] { 69, 420, 123, 1, 6, 3, 2, 5 };
 int sum = 0;
 for (int index = 0; index < example.Length; index++)
     sum += example[index];
 Console.WriteLine($"Average of array elements: {sum / example.Length}");
 
-/* #### 12/17/22
+/*
 
 // * [] given an array of integers, find the minimum value
 int[] example = new int[] { 69, 420, 123, 1, 6, 3, 2, 5 };

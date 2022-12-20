@@ -8,6 +8,7 @@
  */
 
 // do while loops are good for efficient input validation
+/*
 int inputPilot;
 do
 {
@@ -15,6 +16,23 @@ do
     inputPilot = Convert.ToInt32(Console.ReadLine());
 }
 while (inputPilot < 0 || inputPilot > 100);
+*/
+
+
+// replacing code asking for input with a function from Taking a Number
+int AskForNumberInRange(string text, int min, int max)
+{
+    int number;
+    do
+    {
+        Console.Write(text);
+        number = Convert.ToInt32(Console.ReadLine());
+    }
+    while (number < min || number > max);
+    return number;
+}
+
+int inputPilot = AskForNumberInRange("Pilot, enter a number between 0 and 100: ", 0, 100);
 
 Console.Clear();
 

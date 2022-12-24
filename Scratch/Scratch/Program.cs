@@ -1,4 +1,30 @@
-﻿/* LEVEL 13 TODO:
+﻿// recursive countdown print
+int Countdown(int value)
+{
+    Console.WriteLine(value);
+    if (value == 1) return 1;
+    return Countdown(value - 1);    
+}
+
+Countdown(10);
+
+/* 12/23/22
+ * 
+int Factorial(int number)
+{
+    if (number == 1) return 1;
+    return number * Factorial(number - 1);
+}
+ * 
+
+/* 12/19/22
+ * 
+ * 
+ */
+
+/* 12/18/22
+ * 
+ * /* LEVEL 13 TODO:
  * [x] define a method
  * [x] draw a code map that includes: functions, methods, and local functions
  * [x] call a method
@@ -6,10 +32,12 @@
  * [x] create a method with multiple parameters
  * [x] create a method that returns a value
  * [x] overload a method
- * [] define a method with an expression
+ * [x] define a method with an expression
  */
 
 // methods with expressions
+/*
+
 int DoubleAndAddOne(int value)
 {
     return value * 2 + 1;
@@ -17,8 +45,12 @@ int DoubleAndAddOne(int value)
 
 Console.WriteLine(DoubleAndAddOne(5));
 
-/* 12/18/22
- * 
+ */
+
+// expressed in one line
+//int DoubleAndAddOne(int value) => value * 2 + 1;
+/*
+*
  * // overloading a method, local functions don't allow this
 void returnBirthMonth(int value)
 {
